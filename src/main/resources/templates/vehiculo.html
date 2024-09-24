@@ -8,25 +8,29 @@
 </head>
 <body>
     <div class="container" style="width: 500px; margin-top: 100px;">
-        <h1 class="text-center text-bold"> RUEDITAS </h1>
-        <div class="mb-3">
-            <ul> <li> <strong>Marca:</strong> <span th:text="${vehiculo.marca}"></span> </li></ul>
-        </div>
-        <div class="mb-3">
-            <ul> <li> <strong>Modelo:</strong> <span th:text="${vehiculo.modelo}"> </span> </li></ul>
-        </div>
-        <div class="mb-3">
-            <ul> <li> <strong>Numero de Asientos:</strong>  <span th:text="${vehiculo.numeroAsiento}"> </span> </li></ul>
-        </div>
-        <div class="mb-3">
-            <ul> <li> <strong>Precio:</strong>  <span th:text="${vehiculo.precio}"></span> </li></ul>
-        </div>
-        <div class="mb-3">
-            <ul> <li> <strong>Color:</strong> <span th:text="${vehiculo.color}"></span> </li></ul>
-        </div>
+        <div class="card">
+            <div class="card-body">
+                <h1 class="text-center text-bold"> RUEDITAS </h1>
+                <div class="mb-3">
+                    <ul> <li> <strong>Marca:</strong> <span th:text="${vehiculo.marca}"></span> </li></ul>
+                </div>
+                <div class="mb-3">
+                    <ul> <li> <strong>Modelo:</strong> <span th:text="${vehiculo.modelo}"> </span> </li></ul>
+                </div>
+                <div class="mb-3">
+                    <ul> <li> <strong>Numero de Asientos:</strong>  <span th:text="${vehiculo.numeroAsiento}"> </span> </li></ul>
+                </div>
+                <div class="mb-3">
+                    <ul> <li> <strong>Precio:</strong>  <span th:text="${vehiculo.precio}"></span> </li></ul>
+                </div>
+                <div class="mb-3">
+                    <ul> <li> <strong>Color:</strong> <span th:text="${vehiculo.color}"></span> </li></ul>
+                </div>
 
-        <div class="mb-3">
-            <a th:href="@{/formulario/inicio}" class="btn btn-danger"> Regresar </a>
+                <div class="mb-3">
+                    <a th:href="@{/formulario/inicio}" class="btn btn-danger"> Regresar </a>
+                </div>
+            </div>
         </div>
     </div>
 </body>
