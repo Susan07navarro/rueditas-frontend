@@ -12,15 +12,12 @@
     <div class="card">
         <div class="card-body">
             <form th:action="@{/formulario/inicio}" method="post">
-
                 <div>
                     <h1 class="text-center text-bold">RUEDITAS</h1>
                 </div>
-
                 <div class="alert alert-danger" role="alert" th:if="${error.length > 0}">
                     <span th:text="${error}"></span>
                 </div>
-
                 <div class="mb-3">
                     <label> Ingrese una placa: </label>
                     <input type="text" name="placa" required class="form-control form-control-lg" />
