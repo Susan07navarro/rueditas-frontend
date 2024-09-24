@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <title>Vehiculo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container" style="width: 500px; margin-top: 100px;">
+        <h1 class="text-center text-bold"> RUEDITAS </h1>
+        <div class="mb-3">
+            <ul> <li> <strong>Marca:</strong> <span th:text="${vehiculo.marca}"></span> </li></ul>
+        </div>
+        <div class="mb-3">
+            <ul> <li> <strong>Modelo:</strong> <span th:text="${vehiculo.modelo}"> </span> </li></ul>
+        </div>
+        <div class="mb-3">
+            <ul> <li> <strong>Numero de Asientos:</strong>  <span th:text="${vehiculo.numeroAsiento}"> </span> </li></ul>
+        </div>
+        <div class="mb-3">
+            <ul> <li> <strong>Precio:</strong>  <span th:text="${vehiculo.precio}"></span> </li></ul>
+        </div>
+        <div class="mb-3">
+            <ul> <li> <strong>Color:</strong> <span th:text="${vehiculo.color}"></span> </li></ul>
+        </div>
+
+        <div class="mb-3">
+            <a th:href="@{/formulario/inicio}" class="btn btn-danger"> Regresar </a>
+        </div>
+    </div>
+</body>
+</html>
